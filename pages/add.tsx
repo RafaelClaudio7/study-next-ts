@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Top from '../components/Header';
 import GlobalStyle from '../styles/globalStyles';
 import { Main } from '../components/Main';

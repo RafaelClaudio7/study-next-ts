@@ -5,6 +5,8 @@ import Top from "../components/Header";
 import { Main } from "../components/Main";
 import { PostContainer, PostTitle } from "../components/PostCard";
 import GlobalStyle from "../styles/globalStyles";
+import { Spinner } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 type Post = {
   id: number;

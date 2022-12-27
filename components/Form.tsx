@@ -31,7 +31,7 @@ const FormStyled = styled.form<FormProps>`
   width: 40vw;
   padding: 30px 10px 30px 10px;
   border-radius: 5px;
-  background-color: #eeeeee;
+  background-color: #fafafa;
   box-shadow: 1px 1px 3px #000;
 `;
 const Label = styled.label<LabelProps>`
