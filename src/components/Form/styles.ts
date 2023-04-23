@@ -48,12 +48,13 @@ export const Button = styled.button<ButtonSubmitProps>`
   background-color: #112d4e;
   color: #fff;
   font-weight: bold;
-  border: none;
+  border: solid 1px #112d4e;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   &:hover {
-    background-color: #111111;
+    background-color: #f9f7f7;
+    color: #112d4e;
   }
 `;
 
