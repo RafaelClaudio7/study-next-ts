@@ -1,20 +1,28 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
-  opacity: 0.5;
-  margin-top: 10px;
+  margin-top: 40px;
+  max-width: 400px;
 `;
 export const PostTitle = styled.h3`
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #000;
-  text-align: center;
   margin-top: 10px;
-  background-color: #ececec;
+  color: #000;
+  text-align: left;
   padding: 10px;
+  &:hover {
+    color: #3f72af;
+  }
 `;
 export const PostBody = styled.p`
   font-size: 14px;
