@@ -1,9 +1,9 @@
 import React from "react";
 
-import GlobalStyle from "../styles/globalStyles";
 import { Main } from "../components/Main";
 import Form from "../components/Form";
 import Header from "../components/Header";
+import GlobalStyle from "../styles";
 
 export default function AddPost() {
   return (
