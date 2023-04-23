@@ -5,7 +5,6 @@ export const PostContainer = styled.div`
     flex-direction: column;
     opacity: 0.5;
     margin-top: 10px;
-    height: 60vh;
 `
 export const PostTitle = styled.h3`
     font-size: 16px;

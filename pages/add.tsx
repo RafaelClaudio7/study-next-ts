@@ -1,17 +1,18 @@
-import React from 'react';
-import Top from '../components/Header';
-import GlobalStyle from '../styles/globalStyles';
-import { Main } from '../components/Main';
-import Form from '../components/Form';
+import React from "react";
+
+import GlobalStyle from "../styles/globalStyles";
+import { Main } from "../components/Main";
+import Form from "../components/Form";
+import Header from "../components/Header";
 
 export default function AddPost() {
   return (
     <>
-    <GlobalStyle/>
-    <Top />
-    <Main>
-    <Form />
-    </Main>
+      <GlobalStyle />
+      <Header />
+      <Main>
+        <Form />
+      </Main>
     </>
-  )
+  );
 }
