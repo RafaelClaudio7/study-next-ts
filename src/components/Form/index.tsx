@@ -22,22 +22,22 @@ export default function Form() {
 
   return (
     <FormStyled action="" onSubmit={handleSubmit}>
-      <FormTitle>Faça seu Post!</FormTitle>
-      <Label htmlFor="title">Título:</Label>
+      <FormTitle>New Post</FormTitle>
+      <Label htmlFor="title">Title:</Label>
       <Input
         type="text"
         name="title"
         id="title"
         onChange={(e) => setFormData({ ...formData, title: e.target.value })}
       />
-      <Label htmlFor="body">Conteúdo:</Label>
+      <Label htmlFor="body">Content:</Label>
       <Input
         type="text"
         name="body"
         id="body"
         onChange={(e) => setFormData({ ...formData, body: e.target.value })}
       />
-      <Label htmlFor="">Autor:</Label>
+      <Label htmlFor="">Author:</Label>
       <Input
         type="text"
         name="author"
@@ -45,10 +45,10 @@ export default function Form() {
         onChange={(e) => setFormData({ ...formData, author: e.target.value })}
       />
       <ButtonContainer>
-        <Button type="submit">ENVIAR</Button>
+        <Button type="submit">SUBMIT</Button>
       </ButtonContainer>
       <Link href="/">
-        <BackButton>Voltar</BackButton>
+        <BackButton>Back</BackButton>
       </Link>
     </FormStyled>
   );

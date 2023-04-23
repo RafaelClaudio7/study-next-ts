@@ -24,14 +24,13 @@ export const FormStyled = styled.form<FormProps>`
   display: flex;
   flex-direction: column;
   width: 40vw;
-  padding: 30px 10px 30px 10px;
+  padding: 30px 10px;
   border-radius: 5px;
-  background-color: #fafafa;
-  box-shadow: 1px 1px 3px #000;
+  border: solid 1px #112d4e;
 `;
 export const Label = styled.label<LabelProps>`
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 15px;
 `;
 export const Input = styled.input<InputProps>`
@@ -46,7 +45,7 @@ export const Button = styled.button<ButtonSubmitProps>`
   width: 80px;
   display: flex;
   justify-content: center;
-  background-color: #222831;
+  background-color: #112d4e;
   color: #fff;
   font-weight: bold;
   border: none;
@@ -61,7 +60,7 @@ export const Button = styled.button<ButtonSubmitProps>`
 export const FormTitle = styled.h2`
   font-size: 18px;
   text-align: center;
-  text-transform: uppercase;
+  color: #112d4e;
 `;
 
 export const BackButton = styled.p`

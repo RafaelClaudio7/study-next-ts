@@ -1,7 +1,5 @@
 import Head from "next/head";
 
-import { Main } from "../components/Main";
-
 import Header from "../components/Header";
 import Button from "../components/Button";
 import PostCard from "../components/PostCard";
@@ -30,11 +28,11 @@ export default function Home({ posts }: PostProps) {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <Header />
-      <Main>
+      <main>
         <PostCard posts={posts} />
 
         <Button />
-      </Main>
+      </main>
     </>
   );
 }
