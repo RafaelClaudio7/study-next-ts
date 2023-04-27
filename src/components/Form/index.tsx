@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import axios from "axios";
-
 import Link from "next/link";
 import {
   BackButton,
@@ -12,12 +10,24 @@ import {
   Label,
 } from "./styles";
 import { ButtonContainer } from "../Button/styles";
+import { postsApi } from "../../api/api";
+
+interface IFormData {
+  user_id?: number;
+  title: string;
+  body: string;
+  author?: string;
+}
 
 export default function Form() {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState<IFormData>({} as IFormData);
 
   function handleSubmit(): void {
-    axios.post("http://127.0.0.1:7000/api/posts", formData);
+    postsApi.post("/posts", {
+      user_id: 7,
+      title: formData.title,
+      body: formData.body,
+    });
   }
 
   return (

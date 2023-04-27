@@ -5,11 +5,19 @@ import Button from "../components/Button";
 import PostCard from "../components/PostCard";
 import GlobalStyle from "../styles";
 import { PostProps } from "../interfaces/IPost";
+import { postsApi } from "../api/api";
 
 export async function getStaticProps() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const posts = await res.json();
+  // const res = await fetch("http://localhost:3333/api/posts");
+  // const posts = await res.json();
 
+  const posts: Promise<PostProps> = await postsApi
+    .get("/posts")
+    .then((response) => response.data)
+    .catch((error) => {
+      console.log(error);
+      return [];
+    });
   return {
     props: {
       posts,
